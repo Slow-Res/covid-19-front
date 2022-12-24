@@ -43,33 +43,41 @@ export default class Records extends Component {
         <Header />
         <Nav />
 
-        <h1 style={{ textAlign: "center", marginTop: "5vh" }}>
-          COVID19 Statistics for All countries
-        </h1>
+        {this.state.data.length == 0 ? (
+          <p style={{ fontSize: "5rem", padding: "5vw", textAlign: "center" }}>
+            No Avilable Data (ಥ﹏ಥ)
+          </p>
+        ) : (
+          <>
+            <h1 style={{ textAlign: "center", marginTop: "5vh" }}>
+              COVID19 Statistics for All countries
+            </h1>
 
-        <div className="cardsContainer">
-          <Row>
-            {"" ||
-              this.state.data.map((obj, idx) => {
-                return (
-                  <Col
-                    className="cardCol"
-                    key={idx}
-                    sm={12}
-                    md={6}
-                    lg={4}
-                    xl={3}
-                  >
-                    <Record_cards
-                      delete={this.deleteHandler}
-                      key={idx}
-                      data={obj}
-                    />
-                  </Col>
-                );
-              })}
-          </Row>
-        </div>
+            <div className="cardsContainer">
+              <Row>
+                {"" ||
+                  this.state.data.map((obj, idx) => {
+                    return (
+                      <Col
+                        className="cardCol"
+                        key={idx}
+                        sm={12}
+                        md={6}
+                        lg={4}
+                        xl={3}
+                      >
+                        <Record_cards
+                          delete={this.deleteHandler}
+                          key={idx}
+                          data={obj}
+                        />
+                      </Col>
+                    );
+                  })}
+              </Row>
+            </div>
+          </>
+        )}
         <Footer />
       </>
     );
