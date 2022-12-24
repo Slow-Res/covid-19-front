@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/****************Header *********************/
+
+.Header {
+  
+    background-color: #3d56c0;
+    padding-bottom: 10vw;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    font-size: 1.25rem;
+}
+
+.Header h2 {
+    font-size: 1.7rem;
+}
+
+.logo {
+    color: black;
+    font-size: 4rem;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vw;
+}
+
+/*******************Navbar***********************/
+
+.Nav {
+    background-color: #313030;
+    padding: 1.5vw;
+    padding-bottom: 2.2vw;
+    display: flex;
+    gap: 5vw;
+    align-self: center;
+}
+
+.Nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/******************Statistics*****************/
+
+.Statistics {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 5vw;
+    font-size: 2rem;
+    padding-bottom: 10vw;
+}
+
+.Stats {
+    display: flex;
+    color: white;
+    gap: 10vw;
+    
+}
+
+.Stats p {
+    background-color: #e44879;
+    min-width: 3vw;
+    padding: 2vw;
+    font-size: 1.25rem;
+}
+
+/*******************countryForm*****************/
+
+.countryStatistics {
+    padding: 5vw;
+}
+
+.countryFormHeader {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.countryForm {
+    font-size: 1.5rem;
+    display: flex;
+    padding: 2vw;
+    justify-content: center;
+    gap: 3vw;
+     
+    padding-top: 5vh;
+}
+
+.countryForm input {
+    font-size: 1.5rem;
+}
+
+.selector {
+    display: flex;
+}
+
+.DatePicker {
+    font-size: 1.25rem;
+    padding: 1vw;
+    cursor:pointer;
+}
+
+.selector img {
+    margin-left: -2.5rem;
+    z-index: 1;
+    width: 26px;
+    height: 19px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.countryForm button {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        background-color: #3d56c0;
+        color: white;
+        font-size: 1.25rem;
+        border: none;
+}
+
+.countryForm button:hover {
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+.Footer {
+    padding: 2vw;
+    background-color: #313030;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.DateCards {
+    width: 100vw;
+}
+
+.cardBody {
+    display: flex;
+    gap: 1vw;
+    text-align: center;
+    
+}
+
+.CardHeader {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.CardP {
+    font-size: 0.8rem;
+}
+
+.cardText {
+    padding: 1vw;
+    width: 100%;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cardCountry {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e44879;
+}
+
+.pinky {
+    background-color: #e44879;
+    min-width: 10px;
+
+}
+
+.cardCol {
+    margin-bottom: 1rem;
+
+}
+
+.cardsContainer {
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+.dashed {
+    width: 100%;
+}
+
+.CardBtn {
+    background-color: #3d56c0;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.8vw;
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+    border: none;
+    position: absolute;
+    right:    2rem;
+    bottom:   1rem;
+
+
+}
+
+.CardBtn:hover {
+    opacity: 0.4;
+}
+
+.recordBody {
+    display: flex;
+    gap: 1vw;
+    text-align: center;
+}
+
+.recordBtn {
+    background-color: #3d56c0;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.8vw;
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+    border: none;
+    text-align: center;
+}
+
+.recordText {
+    padding: 1vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.DateText {
+    padding: 1vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
